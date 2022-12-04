@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: url(./images/bg-desktop.svg) no-repeat, hsl(257, 40%, 49%);
+  background-size: cover;
+  color: white;
+  padding: 4rem;
+  padding-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 4rem;
+  margin: 3rem 0 1rem 0;
+}
+main > img {
+  aspect-ratio: 14/10;
+  max-width: 100%;
+}
+main h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+main p {
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+}
+main button {
+  color: hsl(257, 40%, 49%);
+  width: 250px;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+main button:hover {
+  background: hsl(300, 69%, 71%);
+  color: white;
+}
+.icon {
+  text-align: right;
+}
+.icon .fab {
+  padding: 0.5rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 0.25rem;
+}
+.icon .fa-facebook-f {
+  padding: 0.5rem 0.65rem;
+}
+.icon i:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+.attribution a:hover {
+  color: hsl(300, 69%, 71%);
+  text-decoration: none;
+}
+@media (max-width: 1000px) {
+  body {
+    padding: 2.5rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    text-align: center;
+  }
+  .icon {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  main h1 {
+    font-size: 1.8rem;
+  }
+  main p {
+    font-size: 1.15rem;
+  }
+}
